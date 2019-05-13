@@ -20,6 +20,6 @@ from qa import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    path('/', views.test, name='simple'),
-    path('login/', views.test, name='login')
+    url(r'/', views.test),
+    url(r'^login/', views.test, name='login')
 ]
