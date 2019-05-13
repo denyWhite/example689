@@ -22,5 +22,4 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     path('/', views.test, name='simple'),
     path('login/', views.test, name='login')
-    path('question/<int:id>/', views.test, name='question')
 ]
